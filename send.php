@@ -1,3 +1,5 @@
+<?php
+
 // 1.言語、文字コードを指定
 mb_language("Ja");
 mb_internal_encoding("UTF-8");
@@ -16,3 +18,5 @@ $email_header .= "Content-transfer-encoding: 8bit\n";
 // 4.上記（送信先、件名、本文、差出人）を日本語でメール送信実行
 mb_send_mail($mailto, $subject, $content, $mailfrom);
 echo '送信完了！';
+
+?>
